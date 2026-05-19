@@ -49,6 +49,8 @@ extern "C" {
  * Permanent screens
  *------------------*/
 
+extern lv_obj_t * RaceScreen;
+
 /*----------------
  * Global styles
  *----------------*/
@@ -89,6 +91,8 @@ void ui_init_gen(const char * asset_path);
 
 /*Include all the widgets, components and screens of this library*/
 #include "components/ConfigureableButton_gen.h"
+#include "components/Tile_gen.h"
+#include "screens/RaceScreen_gen.h"
 
 #ifdef __cplusplus
 } /*extern "C"*/

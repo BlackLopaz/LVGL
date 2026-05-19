@@ -3,5 +3,7 @@ list(
   APPEND
   LV_EDITOR_PROJECT_SOURCES
   ${CMAKE_CURRENT_LIST_DIR}/components/ConfigureableButton_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/components/Tile_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/screens/RaceScreen_gen.c
   ${CMAKE_CURRENT_LIST_DIR}/ui_gen.c
   ${CMAKE_CURRENT_LIST_DIR}/ui.c)

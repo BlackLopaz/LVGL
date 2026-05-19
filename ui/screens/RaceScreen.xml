@@ -1,0 +1,7 @@
+<screen permanent="true">
+	<view>
+		<ConfigureableButton text="Activate DRS" align="top_mid" y="10" />
+		<Tile number="40" text="Speed (Km/h)" width="100" height="100" />
+		<Tile />
+	</view>
+</screen>
