@@ -46,7 +46,7 @@ lv_obj_t * RaceScreen_create(void)
     lv_obj_t * lv_obj_0 = RaceScreen;
     lv_obj_set_name_static(lv_obj_0, "RaceScreen_#");
 
-    lv_obj_t * ConfigurableButton_0 = ConfigurableButton_create(lv_obj_0, 12, 10, "Activate DRS");
+    lv_obj_t * ConfigurableButton_0 = ConfigurableButton_create(lv_obj_0, 12, 10, "Activate DRS", lv_color_hex3(0xfff), RB_RED);
     lv_obj_set_align(ConfigurableButton_0, LV_ALIGN_TOP_MID);
     
     lv_obj_t * Tile_0 = Tile_create(lv_obj_0, 40, "Speed (Km/h)");

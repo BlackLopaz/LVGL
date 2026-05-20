@@ -37,7 +37,7 @@ extern "C" {
  * GLOBAL PROTOTYPES
  **********************/
 
-lv_obj_t * ConfigurableButton_create(lv_obj_t * parent, int32_t x, int32_t y, const char * text);
+lv_obj_t * ConfigurableButton_create(lv_obj_t * parent, int32_t x, int32_t y, const char * text, lv_color_t text_colour, lv_color_t bg_colour);
 
 /**********************
  *      MACROS
