@@ -37,7 +37,7 @@ extern "C" {
  * GLOBAL PROTOTYPES
  **********************/
 
-lv_obj_t * Tile_create(lv_obj_t * parent, int32_t number, const char * text, int32_t tile_pos_x, int32_t tile_pos_y, int32_t width, int32_t height);
+lv_obj_t * Tile_create(lv_obj_t * parent, int32_t number, const char * text, int32_t tile_pos_x, int32_t tile_pos_y);
 
 /**********************
  *      MACROS
