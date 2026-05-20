@@ -1,9 +1,9 @@
 /**
- * @file Tile_gen.h
+ * @file GridScreen_gen.h
  */
 
-#ifndef TILE_H
-#define TILE_H
+#ifndef GRIDSCREEN_H
+#define GRIDSCREEN_H
 
 #ifdef __cplusplus
 extern "C" {
@@ -37,7 +37,7 @@ extern "C" {
  * GLOBAL PROTOTYPES
  **********************/
 
-lv_obj_t * Tile_create(lv_obj_t * parent, int32_t number, const char * text);
+lv_obj_t * GridScreen_create(lv_obj_t * parent);
 
 /**********************
  *      MACROS
@@ -47,4 +47,4 @@ lv_obj_t * Tile_create(lv_obj_t * parent, int32_t number, const char * text);
 } /*extern "C"*/
 #endif
 
-#endif /*TILE_H*/
+#endif /*GRIDSCREEN_H*/

@@ -3,6 +3,7 @@ list(
   APPEND
   LV_EDITOR_PROJECT_SOURCES
   ${CMAKE_CURRENT_LIST_DIR}/components/ConfigurableButton_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/components/GridScreen_gen.c
   ${CMAKE_CURRENT_LIST_DIR}/components/Tile_gen.c
   ${CMAKE_CURRENT_LIST_DIR}/screens/RaceScreen_gen.c
   ${CMAKE_CURRENT_LIST_DIR}/ui_gen.c

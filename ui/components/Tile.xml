@@ -2,8 +2,6 @@
 	<api>
 		<prop name="number" type="int" default="40" />
 		<prop name="text" type="string" default="real text" />
-		<prop name="tile_pos_x" type="int" default="0" />
-		<prop name="tile_pos_y" type="int" default="0" />
 	</api>
 
 	<styles>
@@ -28,14 +26,14 @@
 	</styles>
 
 	<view>
-		<lv_obj x="$tile_pos_x" y="$tile_pos_y" width="content" height="content">
+		<lv_obj width="100%" height="100%">
 			<style name="style_tile" />
 
-			<lv_label text="$number">
+			<lv_label text="$number" width="100%" style_text_align="center">
 				<style name="style_number" />
 			</lv_label>
 
-			<lv_label text="$text">
+			<lv_label text="$text" width="100%" style_text_align="center">
 				<style name="style_text" />
 			</lv_label>
 		</lv_obj>
