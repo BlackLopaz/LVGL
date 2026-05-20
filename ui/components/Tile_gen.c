@@ -45,7 +45,7 @@ lv_obj_t * Tile_create(lv_obj_t * parent, int32_t number, const char * text)
         lv_style_set_bg_opa(&style_tile, (255 * 100 / 100));
         lv_style_set_bg_color(&style_tile, lv_color_hex3(0x000));
         lv_style_set_radius(&style_tile, 6);
-        lv_style_set_pad_all(&style_tile, 6);
+        lv_style_set_pad_all(&style_tile, 0);
         lv_style_set_layout(&style_tile, LV_LAYOUT_FLEX);
         lv_style_set_flex_flow(&style_tile, LV_FLEX_FLOW_COLUMN);
         lv_style_set_flex_main_place(&style_tile, LV_FLEX_ALIGN_CENTER);
@@ -60,7 +60,7 @@ lv_obj_t * Tile_create(lv_obj_t * parent, int32_t number, const char * text)
         lv_style_set_text_align(&style_number, LV_TEXT_ALIGN_CENTER);
 
         lv_style_init(&style_text);
-        lv_style_set_text_font(&style_text, lv_font_montserrat_12);
+        lv_style_set_text_font(&style_text, lv_font_montserrat_8);
         lv_style_set_text_color(&style_text, lv_color_hex3(0xfff));
         lv_style_set_text_align(&style_text, LV_TEXT_ALIGN_CENTER);
 

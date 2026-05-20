@@ -49,10 +49,10 @@ lv_obj_t * GridScreen_create(lv_obj_t * parent)
     if (!style_inited) {
         lv_style_init(&style_grid);
         lv_style_set_layout(&style_grid, LV_LAYOUT_GRID);
-        static const int32_t style_grid_grid_row_dsc_array_0[] = {LV_GRID_FR(1), LV_GRID_FR(1), LV_GRID_TEMPLATE_LAST};
-        lv_style_set_grid_row_dsc_array(&style_grid, style_grid_grid_row_dsc_array_0);
-        static const int32_t style_grid_grid_column_dsc_array_1[] = {LV_GRID_FR(1), LV_GRID_FR(1), LV_GRID_TEMPLATE_LAST};
-        lv_style_set_grid_column_dsc_array(&style_grid, style_grid_grid_column_dsc_array_1);
+        static const int32_t style_grid_grid_column_dsc_array_0[] = {LV_GRID_FR(1), LV_GRID_FR(1), LV_GRID_FR(1), LV_GRID_FR(1), LV_GRID_FR(1), LV_GRID_TEMPLATE_LAST};
+        lv_style_set_grid_column_dsc_array(&style_grid, style_grid_grid_column_dsc_array_0);
+        static const int32_t style_grid_grid_row_dsc_array_1[] = {LV_GRID_FR(1), LV_GRID_FR(1), LV_GRID_TEMPLATE_LAST};
+        lv_style_set_grid_row_dsc_array(&style_grid, style_grid_grid_row_dsc_array_1);
         lv_style_set_width(&style_grid, lv_pct(100));
         lv_style_set_height(&style_grid, lv_pct(100));
         lv_style_set_pad_all(&style_grid, 10);

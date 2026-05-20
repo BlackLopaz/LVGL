@@ -10,7 +10,7 @@
 			bg_opa="100%"
 			bg_color="0x000"
 			radius="6"
-			pad_all="6"
+			pad_all="0"
 			layout="flex"
 			flex_flow="column"
 			flex_main_place="center"
@@ -22,7 +22,7 @@
 
 		<style name="style_number" text_font="lv_font_montserrat_20" text_color="0xfff" text_align="center" />
 
-		<style name="style_text" text_font="lv_font_montserrat_12" text_color="0xfff" text_align="center" />
+		<style name="style_text" text_font="lv_font_montserrat_8" text_color="0xfff" text_align="center" />
 	</styles>
 
 	<view>

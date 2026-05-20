@@ -3,28 +3,30 @@
 		<prop name="x" type="int" default="12" />
 		<prop name="y" type="int" default="24" />
 		<prop name="text" type="string" default="button" />
+		<prop name="text_colour" type="color" default="0xfff" />
+		<prop name="bg_colour" type="color" default="#rb_red" />
 	</api>
 
 	<styles>
 		<style
 			name="style_base"
 			bg_opa="100%"
-			bg_color="#rb_red"
+			bg_color="$bg_colour"
 			width="content"
 			height="content"
-			radius="$x"
-			pad_hor="$x"
-			pad_ver="$y"
-			text_color="0xfff"
+			radius="5"
+			pad_hor="0"
+			pad_ver="0"
+			text_color="$text_colour"
 		/>
 
-		<style name="style_pressed" recolor="0xfff" recolor_opa="20%" />
+		<style name="style_pressed" recolor="$text_colour" recolor_opa="20%" />
 	</styles>
 
-	<view extends="lv_button">
+	<view extends="lv_button" style_bg_color="$bg_colour">
 		<style name="style_base" />
 		<style name="style_pressed" selector="pressed" />
 
-		<lv_label text="$text" align="center" />
+		<lv_label text="$text" align="center" style_text_color="$text_colour" />
 	</view>
 </component>
