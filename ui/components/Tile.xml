@@ -1,36 +1,29 @@
 <component>
 	<api>
-		<prop name="number" type="int" default="0" />
-		<prop name="text" type="string" default="button" />
+		<prop name="number" type="int" default="40" />
+		<prop name="text" type="string" default="real text" />
 		<prop name="tile_pos_x" type="int" default="0" />
 		<!-- Probably not needed since the screen can take care of position -->
 		<prop name="tile_pos_y" type="int" default="0" />
 		<!-- Probably not needed since the screen can take care of position -->
-		<prop name="width" type="int" default="20" />
-		<prop name="height" type="int" default="20" />
+		<prop name="width" type="int" default="100" />
+		<prop name="height" type="int" default="100" />
 	</api>
 
-	<!-- <styles>
-		<style
-			name="style_base"
-			bg_opa="100%"
-			bg_color="#rb_red"
-			width="content"
-			height="content"
-			radius="$x"
-			pad_hor="$x"
-			pad_ver="$y"
-			text_color="0xfff"
-		/> -->
-
-	<!-- <style name="style_pressed" recolor="0xfff" recolor_opa="20%" />
-	</styles> -->
+	<styles>
+		<style name="style_base" bg_opa="100%" bg_color="#rb_red" width="content" height="content" text_color="0x000" />
+		<style name="style_column" flex_flow="column" flex_main_place="center" flex_cross_place="center" pad_row="4" />
+	</styles>
 
 	<view>
-		<lv_obj x="$tile_pos_x" y="$tile_pos_y" width="$width" height="$height">
-			<lv_label text="$number" />
+		<lv_obj x="$tile_pos_x" y="$tile_pos_y" width="$width" height="$height" style_layout="flex">
+			<style name="style_column" />
 
-			<lv_label text="$text" />
+			<lv_label text="$number" align="center" style_text_align="center" />
+
+			<lv_label text="$text" align="center" style_text_align="center">
+				<style name="style_base" />
+			</lv_label>
 		</lv_obj>
 	</view>
 </component>
