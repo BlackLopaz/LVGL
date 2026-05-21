@@ -30,7 +30,7 @@
  *   GLOBAL FUNCTIONS
  **********************/
 
-lv_obj_t * Tile_create(lv_obj_t * parent, int32_t number, const char * text, lv_font_t * number_font, lv_font_t * text_font)
+lv_obj_t * Tile_create(lv_obj_t * parent, const char * number_text, const char * text, lv_font_t * number_font, lv_font_t * text_font)
 {
     LV_TRACE_OBJ_CREATE("begin");
 
@@ -72,7 +72,7 @@ lv_obj_t * Tile_create(lv_obj_t * parent, int32_t number, const char * text, lv_
 
     lv_obj_add_style(lv_obj_0, &style_tile, 0);
     lv_obj_t * lv_label_0 = lv_label_create(lv_obj_0);
-    lv_label_set_text(lv_label_0, number);
+    lv_label_set_text(lv_label_0, number_text);
     lv_obj_set_width(lv_label_0, lv_pct(100));
     lv_obj_set_style_text_align(lv_label_0, LV_TEXT_ALIGN_CENTER, 0);
     lv_obj_add_style(lv_label_0, &style_number, 0);

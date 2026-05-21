@@ -1,6 +1,6 @@
 <component>
 	<api>
-		<prop name="number" type="int" default="40" />
+		<prop name="number_text" type="string" default="40.0" />
 		<prop name="text" type="string" default="real text" />
 		<prop name="number_font" type="font" default="lv_font_montserrat_20" />
 		<prop name="text_font" type="font" default="lv_font_montserrat_8" />
@@ -30,7 +30,7 @@
 	<view extends="lv_obj">
 		<style name="style_tile" />
 
-		<lv_label text="$number" width="100%" style_text_align="center">
+		<lv_label text="$number_text" width="100%" style_text_align="center">
 			<style name="style_number" />
 		</lv_label>
 
