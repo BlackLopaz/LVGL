@@ -49,6 +49,10 @@ lv_obj_t * RaceScreen = NULL;
  * Images
  *----------------*/
 
+const void * MonsterVRedbull_data;
+extern const void * MonsterVRedbull_data_data;
+const void * MonsterVRedbull_file;
+
 /*----------------
  * Global styles
  *----------------*/
@@ -78,6 +82,10 @@ void ui_init_gen(const char * asset_path)
     /*----------------
      * Images
      *----------------*/
+    MonsterVRedbull_data = &MonsterVRedbull_data_data;
+    lv_snprintf(buf, 256, "%s%s", asset_path, "images/MonsterVRedbullScaled.png");
+    MonsterVRedbull_file = lv_strdup(buf);
+
     /*----------------
      * Global styles
      *----------------*/
@@ -103,6 +111,8 @@ void ui_init_gen(const char * asset_path)
      * While running in the editor skip this step to update the preview when the XML changes */
 #if LV_USE_XML && !defined(LV_EDITOR_PREVIEW)
     /* Register images */
+    lv_xml_register_image(NULL, "MonsterVRedbull_data", MonsterVRedbull_data);
+    lv_xml_register_image(NULL, "MonsterVRedbull_file", MonsterVRedbull_file);
 #endif
 
 #if LV_USE_XML == 0

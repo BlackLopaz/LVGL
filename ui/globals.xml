@@ -19,6 +19,8 @@
 
 	<images>
 		<!-- Add <file> or <data> tags here -->
+		<data src_path="images/MonsterVRedbullScaled.png" name="MonsterVRedbull_data" color_format="rgb565a8" />
+		<file src_path="images/MonsterVRedbullScaled.png" name="MonsterVRedbull_file" />
 	</images>
 
 	<fonts>

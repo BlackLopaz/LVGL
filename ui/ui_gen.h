@@ -65,6 +65,9 @@ extern lv_obj_t * RaceScreen;
  * Images
  *----------------*/
 
+extern const void * MonsterVRedbull_data;
+extern const void * MonsterVRedbull_file;
+
 /*----------------
  * Subjects
  *----------------*/

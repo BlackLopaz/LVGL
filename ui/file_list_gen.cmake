@@ -5,6 +5,7 @@ list(
   ${CMAKE_CURRENT_LIST_DIR}/components/ConfigurableButton_gen.c
   ${CMAKE_CURRENT_LIST_DIR}/components/GridScreen_gen.c
   ${CMAKE_CURRENT_LIST_DIR}/components/Tile_gen.c
+  ${CMAKE_CURRENT_LIST_DIR}/images/MonsterVRedbull_data_data.c
   ${CMAKE_CURRENT_LIST_DIR}/screens/RaceScreen_gen.c
   ${CMAKE_CURRENT_LIST_DIR}/ui_gen.c
   ${CMAKE_CURRENT_LIST_DIR}/ui.c)
