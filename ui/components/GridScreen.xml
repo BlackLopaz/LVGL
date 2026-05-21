@@ -138,8 +138,8 @@
 				/>
 
 				<Tile
-					number_text="9888"
-					text="RPM"
+					number_text="37"
+					text="TEMP"
 					style_grid_cell_column_pos="0"
 					style_grid_cell_row_pos="1"
 					style_grid_cell_x_align="stretch"

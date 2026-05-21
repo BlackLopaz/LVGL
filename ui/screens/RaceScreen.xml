@@ -17,7 +17,7 @@
 			name="style_left_grid"
 			layout="grid"
 			grid_column_dsc_array="fr(1)"
-			grid_row_dsc_array="fr(1) fr(1)"
+			grid_row_dsc_array="fr(1) fr(4)"
 			width="100%"
 			height="100%"
 			pad_all="0"
@@ -52,11 +52,11 @@
 				style_grid_cell_x_align="center"
 				style_grid_cell_y_align="center"
 			>
-				<lv_label text="Activate DRS" style_bg_color="0x000" style_text_color="0xFFF" />
+				<lv_label text="Activate DJ" style_bg_color="0x000" style_text_color="0xFFF" />
 			</lv_button>
 			<Tile
-				number_text="68"
-				text="TEMP"
+				number_text="9899"
+				text="RPM"
 				style_grid_cell_column_pos="0"
 				style_grid_cell_row_pos="1"
 				style_grid_cell_x_align="stretch"
