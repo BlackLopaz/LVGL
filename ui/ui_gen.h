@@ -37,6 +37,8 @@ extern "C" {
 
 #define RB_RED lv_color_hex(0xE30118)
 
+#define BACKGROUND_DEFAULT lv_color_hex3(0x000)
+
 /**********************
  *      TYPEDEFS
  **********************/

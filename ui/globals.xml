@@ -6,6 +6,7 @@
 	<consts>
 		<!-- Add <px>, <int>, <color> etc here -->
 		<color name="rb_red" value="0xE30118" />
+		<color name="background_default" value="0x000" />
 	</consts>
 
 	<styles>

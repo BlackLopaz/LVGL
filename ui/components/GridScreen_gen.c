@@ -55,9 +55,10 @@ lv_obj_t * GridScreen_create(lv_obj_t * parent)
         lv_style_set_grid_row_dsc_array(&style_grid, style_grid_grid_row_dsc_array_3);
         lv_style_set_width(&style_grid, lv_pct(100));
         lv_style_set_height(&style_grid, lv_pct(100));
-        lv_style_set_pad_all(&style_grid, 10);
-        lv_style_set_pad_column(&style_grid, 8);
-        lv_style_set_pad_row(&style_grid, 8);
+        lv_style_set_pad_all(&style_grid, 0);
+        lv_style_set_pad_column(&style_grid, 0);
+        lv_style_set_pad_row(&style_grid, 0);
+        lv_style_set_bg_color(&style_grid, lv_color_hex3(0x000));
 
         lv_style_init(&cell_0_0);
         lv_style_set_grid_cell_column_pos(&cell_0_0, 0);
@@ -104,46 +105,57 @@ lv_obj_t * GridScreen_create(lv_obj_t * parent)
     lv_obj_set_height(lv_obj_0, 600);
 
     lv_obj_add_style(lv_obj_0, &style_grid, LV_PART_MAIN);
-    lv_obj_t * Tile_0 = Tile_create(lv_obj_0, 10, "CURRENT");
+    lv_obj_t * Tile_0 = Tile_create(lv_obj_0, 10, "CURRENT", lv_font_montserrat_20, lv_font_montserrat_8);
     lv_obj_set_style_grid_cell_column_pos(Tile_0, 0, 0);
     lv_obj_set_style_grid_cell_row_pos(Tile_0, 0, 0);
     lv_obj_set_style_grid_cell_x_align(Tile_0, LV_GRID_ALIGN_STRETCH, 0);
     lv_obj_set_style_grid_cell_y_align(Tile_0, LV_GRID_ALIGN_STRETCH, 0);
     
-    lv_obj_t * Tile_1 = Tile_create(lv_obj_0, 1, "RED BULL");
+    lv_obj_t * Tile_1 = Tile_create(lv_obj_0, 1, "RED BULL", lv_font_montserrat_20, lv_font_montserrat_8);
     lv_obj_set_style_grid_cell_column_pos(Tile_1, 0, 0);
     lv_obj_set_style_grid_cell_row_pos(Tile_1, 1, 0);
     lv_obj_set_style_grid_cell_x_align(Tile_1, LV_GRID_ALIGN_STRETCH, 0);
     lv_obj_set_style_grid_cell_y_align(Tile_1, LV_GRID_ALIGN_STRETCH, 0);
     
-    lv_obj_t * ConfigurableButton_0 = ConfigurableButton_create(lv_obj_0, 12, 24, "Activate DRS", lv_color_hex3(0xFFF), RB_RED);
-    lv_obj_set_style_grid_cell_column_pos(ConfigurableButton_0, 1, 0);
-    lv_obj_set_style_grid_cell_row_pos(ConfigurableButton_0, 0, 0);
-    lv_obj_set_style_grid_cell_x_align(ConfigurableButton_0, LV_GRID_ALIGN_STRETCH, 0);
-    lv_obj_set_style_grid_cell_y_align(ConfigurableButton_0, LV_GRID_ALIGN_STRETCH, 0);
+    lv_obj_t * lv_button_0 = lv_button_create(lv_obj_0);
+    lv_obj_set_style_grid_cell_column_pos(lv_button_0, 1, 0);
+    lv_obj_set_style_grid_cell_row_pos(lv_button_0, 0, 0);
+    lv_obj_set_style_grid_cell_x_align(lv_button_0, LV_GRID_ALIGN_CENTER, 0);
+    lv_obj_set_style_grid_cell_y_align(lv_button_0, LV_GRID_ALIGN_CENTER, 0);
+    lv_obj_set_style_bg_color(lv_button_0, RB_RED, 0);
+    lv_obj_set_style_border_width(lv_button_0, 5, 0);
+    lv_obj_set_style_border_color(lv_button_0, lv_color_hex3(0x000), 0);
+    lv_obj_t * lv_label_0 = lv_label_create(lv_button_0);
+    lv_label_set_text(lv_label_0, "Activate DRS");
+    lv_obj_set_style_bg_color(lv_label_0, lv_color_hex3(0x000), 0);
+    lv_obj_set_style_text_color(lv_label_0, lv_color_hex3(0xFFF), 0);
     
     lv_obj_t * lv_obj_1 = lv_obj_create(lv_obj_0);
     lv_obj_set_style_grid_cell_column_pos(lv_obj_1, 1, 0);
     lv_obj_set_style_grid_cell_row_pos(lv_obj_1, 1, 0);
     lv_obj_set_style_grid_cell_x_align(lv_obj_1, LV_GRID_ALIGN_STRETCH, 0);
     lv_obj_set_style_grid_cell_y_align(lv_obj_1, LV_GRID_ALIGN_STRETCH, 0);
+    lv_obj_set_style_bg_color(lv_obj_1, lv_color_hex3(0x000), 0);
+    lv_obj_set_style_border_color(lv_obj_1, lv_color_hex3(0x000), 0);
     lv_obj_t * lv_obj_2 = lv_obj_create(lv_obj_1);
     lv_obj_set_style_layout(lv_obj_2, LV_LAYOUT_GRID, 0);
-    static const int32_t lv_obj_2_style_grid_column_dsc_array_0[] = {LV_GRID_FR(1), LV_GRID_FR(1), LV_GRID_TEMPLATE_LAST};
+    static const int32_t lv_obj_2_style_grid_column_dsc_array_0[] = {LV_GRID_FR(1), LV_GRID_TEMPLATE_LAST};
     lv_obj_set_style_grid_column_dsc_array(lv_obj_2, lv_obj_2_style_grid_column_dsc_array_0, 0);
-    static const int32_t lv_obj_2_style_grid_row_dsc_array_1[] = {LV_GRID_FR(1), LV_GRID_TEMPLATE_LAST};
+    static const int32_t lv_obj_2_style_grid_row_dsc_array_1[] = {LV_GRID_FR(1), LV_GRID_FR(1), LV_GRID_TEMPLATE_LAST};
     lv_obj_set_style_grid_row_dsc_array(lv_obj_2, lv_obj_2_style_grid_row_dsc_array_1, 0);
     lv_obj_set_width(lv_obj_2, lv_pct(100));
     lv_obj_set_height(lv_obj_2, lv_pct(100));
-    lv_obj_t * Tile_2 = Tile_create(lv_obj_2, 40, "BEST LAP");
+    lv_obj_set_style_bg_color(lv_obj_2, lv_color_hex3(0x000), 0);
+    lv_obj_set_style_border_color(lv_obj_2, lv_color_hex3(0x000), 0);
+    lv_obj_t * Tile_2 = Tile_create(lv_obj_2, 40, "BEST LAP", lv_font_montserrat_20, lv_font_montserrat_8);
     lv_obj_set_style_grid_cell_column_pos(Tile_2, 0, 0);
     lv_obj_set_style_grid_cell_row_pos(Tile_2, 0, 0);
     lv_obj_set_style_grid_cell_x_align(Tile_2, LV_GRID_ALIGN_STRETCH, 0);
     lv_obj_set_style_grid_cell_y_align(Tile_2, LV_GRID_ALIGN_STRETCH, 0);
     
-    lv_obj_t * Tile_3 = Tile_create(lv_obj_2, 9888, "RPM");
-    lv_obj_set_style_grid_cell_column_pos(Tile_3, 1, 0);
-    lv_obj_set_style_grid_cell_row_pos(Tile_3, 0, 0);
+    lv_obj_t * Tile_3 = Tile_create(lv_obj_2, 9888, "RPM", lv_font_montserrat_20, lv_font_montserrat_8);
+    lv_obj_set_style_grid_cell_column_pos(Tile_3, 0, 0);
+    lv_obj_set_style_grid_cell_row_pos(Tile_3, 1, 0);
     lv_obj_set_style_grid_cell_x_align(Tile_3, LV_GRID_ALIGN_STRETCH, 0);
     lv_obj_set_style_grid_cell_y_align(Tile_3, LV_GRID_ALIGN_STRETCH, 0);
 
