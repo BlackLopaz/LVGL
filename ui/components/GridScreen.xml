@@ -49,6 +49,21 @@
 		<style name="debug_green" bg_color="0x00FF00" />
 		<style name="debug_blue" bg_color="0x0000FF" />
 		<style name="debug_yellow" bg_color="0xFFFF00" />
+
+		<style
+			name="style_tile"
+			bg_opa="100%"
+			bg_color="0x000"
+			radius="6"
+			pad_all="6"
+			layout="flex"
+			flex_flow="column"
+			flex_main_place="center"
+			flex_cross_place="center"
+			border_width="5"
+			border_color="#rb_red"
+			pad_row="2"
+		/>
 	</styles>
 
 	<view extends="lv_obj" width="1024" height="600">
@@ -63,14 +78,30 @@
 			style_grid_cell_x_align="stretch"
 			style_grid_cell_y_align="stretch"
 		/>
-		<Tile
-			number_text="1"
-			text="RED BULL"
+		<lv_obj
 			style_grid_cell_column_pos="0"
 			style_grid_cell_row_pos="1"
 			style_grid_cell_x_align="stretch"
 			style_grid_cell_y_align="stretch"
-		/>
+		>
+			<style name="style_tile" />
+
+			<lv_label
+				text="1"
+				width="100%"
+				style_text_font="large_font"
+				style_text_color="0xfff"
+				style_text_align="center"
+			/>
+
+			<lv_label
+				text="RED BULL"
+				width="100%"
+				style_text_font="large_font"
+				style_text_color="#rb_red"
+				style_text_align="center"
+			/>
+		</lv_obj>
 		<!-- Button to play Max theme -->
 		<lv_obj
 			style_grid_cell_column_pos="1"
