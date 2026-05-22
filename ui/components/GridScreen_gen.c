@@ -179,8 +179,8 @@ lv_obj_t * GridScreen_create(lv_obj_t * parent)
     lv_obj_set_style_grid_cell_row_pos(lv_image_0, 0, 0);
     lv_obj_set_style_grid_cell_x_align(lv_image_0, LV_GRID_ALIGN_STRETCH, 0);
     lv_obj_set_style_grid_cell_y_align(lv_image_0, LV_GRID_ALIGN_STRETCH, 0);
-    lv_image_set_scale_x(lv_image_0, 83);
-    lv_image_set_scale_y(lv_image_0, 83);
+    lv_image_set_scale_x(lv_image_0, 70);
+    lv_image_set_scale_y(lv_image_0, 70);
     lv_image_set_src(lv_image_0, MonsterVRedbull_file);
     
     lv_obj_t * lv_obj_4 = lv_obj_create(lv_obj_0);

@@ -40,6 +40,7 @@
  *-------------------*/
 
 lv_obj_t * RaceScreen = NULL;
+lv_obj_t * StartScreen = NULL;
 
 /*----------------
  * Fonts
@@ -130,8 +131,10 @@ void ui_init_gen(const char * asset_path)
      * manaully from XML using lv_xml_create() */
     /* To allow screens to reference each other, create them all before calling the sceen create functions */
     RaceScreen = lv_obj_create(NULL);
+    StartScreen = lv_obj_create(NULL);
 
     RaceScreen_create();
+    StartScreen_create();
 #endif
 }
 

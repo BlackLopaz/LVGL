@@ -45,7 +45,7 @@ lv_obj_t * Tile_create(lv_obj_t * parent, const char * number_text, const char *
         lv_style_set_bg_opa(&style_tile, (255 * 100 / 100));
         lv_style_set_bg_color(&style_tile, BACKGROUND_DEFAULT);
         lv_style_set_radius(&style_tile, 6);
-        lv_style_set_pad_all(&style_tile, 6);
+        lv_style_set_pad_all(&style_tile, 0);
         lv_style_set_layout(&style_tile, LV_LAYOUT_FLEX);
         lv_style_set_flex_flow(&style_tile, LV_FLEX_FLOW_COLUMN);
         lv_style_set_flex_main_place(&style_tile, LV_FLEX_ALIGN_CENTER);

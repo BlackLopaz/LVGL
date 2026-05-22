@@ -37,7 +37,7 @@ extern "C" {
 
 #define RB_RED lv_color_hex(0xE30118)
 
-#define BACKGROUND_DEFAULT lv_color_hex(0x343434)
+#define BACKGROUND_DEFAULT lv_color_hex(0x252525)
 
 /**********************
  *      TYPEDEFS
@@ -52,6 +52,7 @@ extern "C" {
  *------------------*/
 
 extern lv_obj_t * RaceScreen;
+extern lv_obj_t * StartScreen;
 
 /*----------------
  * Global styles
@@ -101,6 +102,7 @@ void ui_init_gen(const char * asset_path);
 #include "components/GridScreen_gen.h"
 #include "components/Tile_gen.h"
 #include "screens/RaceScreen_gen.h"
+#include "screens/StartScreen_gen.h"
 
 #ifdef __cplusplus
 } /*extern "C"*/
