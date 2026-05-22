@@ -25,6 +25,21 @@
 			pad_row="0"
 			bg_color="0x000"
 		/>
+
+		<style
+			name="style_tile"
+			bg_opa="100%"
+			bg_color="0x000"
+			radius="6"
+			pad_all="6"
+			layout="flex"
+			flex_flow="column"
+			flex_main_place="center"
+			flex_cross_place="center"
+			border_width="5"
+			border_color="#rb_red"
+			pad_row="2"
+		/>
 	</styles>
 	<view>
 		<style name="style_overall_grid" />
@@ -54,15 +69,30 @@
 			>
 				<lv_label text="Activate DJ" style_bg_color="0x000" style_text_color="0xFFF" />
 			</lv_button>
-			<Tile
-				number_text="9899"
-				text="RPM"
+			<lv_obj
 				style_grid_cell_column_pos="0"
 				style_grid_cell_row_pos="1"
 				style_grid_cell_x_align="stretch"
 				style_grid_cell_y_align="stretch"
-				text_font="&amp;large_font"
-			/>
+			>
+				<style name="style_tile" />
+
+				<lv_label
+					text="9899"
+					width="100%"
+					style_text_font="large_font"
+					style_text_color="0xfff"
+					style_text_align="center"
+				/>
+
+				<lv_label
+					text="RPM"
+					width="100%"
+					style_text_font="large_font"
+					style_text_color="#rb_red"
+					style_text_align="center"
+				/>
+			</lv_obj>
 		</lv_obj>
 	</view>
 </screen>
