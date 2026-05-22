@@ -37,7 +37,7 @@ extern "C" {
 
 #define RB_RED lv_color_hex(0xE30118)
 
-#define BACKGROUND_DEFAULT lv_color_hex3(0x000)
+#define BACKGROUND_DEFAULT lv_color_hex(0x343434)
 
 /**********************
  *      TYPEDEFS
@@ -60,6 +60,8 @@ extern lv_obj_t * RaceScreen;
 /*----------------
  * Fonts
  *----------------*/
+
+extern lv_font_t * large_font;
 
 /*----------------
  * Images

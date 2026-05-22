@@ -10,7 +10,7 @@
 			pad_all="0"
 			pad_column="0"
 			pad_row="0"
-			bg_color="0x000"
+			bg_color="#background_default"
 		/>
 
 		<style
@@ -23,13 +23,13 @@
 			pad_all="0"
 			pad_column="0"
 			pad_row="0"
-			bg_color="0x000"
+			bg_color="#background_default"
 		/>
 
 		<style
 			name="style_tile"
 			bg_opa="100%"
-			bg_color="0x000"
+			bg_color="#background_default"
 			radius="6"
 			pad_all="6"
 			layout="flex"
@@ -67,7 +67,7 @@
 				style_grid_cell_x_align="center"
 				style_grid_cell_y_align="center"
 			>
-				<lv_label text="Activate DJ" style_bg_color="0x000" style_text_color="0xFFF" />
+				<lv_label text="Activate DJ" style_bg_color="#background_default" style_text_color="0xFFF" />
 			</lv_button>
 			<lv_obj
 				style_grid_cell_column_pos="0"

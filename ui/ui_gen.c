@@ -45,6 +45,8 @@ lv_obj_t * RaceScreen = NULL;
  * Fonts
  *----------------*/
 
+lv_font_t * large_font;
+
 /*----------------
  * Images
  *----------------*/
@@ -78,6 +80,10 @@ void ui_init_gen(const char * asset_path)
      * Fonts
      *----------------*/
 
+    /* create tiny ttf font "large_font" from file */
+    lv_snprintf(buf, 256, "%s%s", asset_path, "fonts/Montserrat_Medium.ttf");
+    large_font = lv_tiny_ttf_create_file(buf, 36);
+
 
     /*----------------
      * Images
@@ -101,6 +107,7 @@ void ui_init_gen(const char * asset_path)
     /* Register widgets */
 
     /* Register fonts */
+    lv_xml_register_font(NULL, "large_font", large_font);
 
     /* Register subjects */
 

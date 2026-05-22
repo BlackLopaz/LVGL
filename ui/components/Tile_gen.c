@@ -30,7 +30,7 @@
  *   GLOBAL FUNCTIONS
  **********************/
 
-lv_obj_t * Tile_create(lv_obj_t * parent, const char * number_text, const char * text, lv_font_t * number_font, lv_font_t * text_font)
+lv_obj_t * Tile_create(lv_obj_t * parent, const char * number_text, const char * text, lv_color_t text_color, lv_font_t * number_font, lv_font_t * text_font)
 {
     LV_TRACE_OBJ_CREATE("begin");
 
@@ -43,7 +43,7 @@ lv_obj_t * Tile_create(lv_obj_t * parent, const char * number_text, const char *
     if (!style_inited) {
         lv_style_init(&style_tile);
         lv_style_set_bg_opa(&style_tile, (255 * 100 / 100));
-        lv_style_set_bg_color(&style_tile, lv_color_hex3(0x000));
+        lv_style_set_bg_color(&style_tile, BACKGROUND_DEFAULT);
         lv_style_set_radius(&style_tile, 6);
         lv_style_set_pad_all(&style_tile, 6);
         lv_style_set_layout(&style_tile, LV_LAYOUT_FLEX);
