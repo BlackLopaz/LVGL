@@ -61,6 +61,7 @@
 				style_grid_cell_row_pos="1"
 				style_grid_cell_x_align="stretch"
 				style_grid_cell_y_align="stretch"
+				text_font="&amp;large_font"
 			/>
 		</lv_obj>
 	</view>
